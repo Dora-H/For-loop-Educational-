@@ -1,49 +1,28 @@
-# for x in 'ABC':
-#     for y in'123':
-#         print(x+y)
+'''朵拉找尋寶藏大冒險'''
+# 假設朵拉的箱子為D_box，裡面有裝很多東西，可是不曉得有什麼，所以用treasure命名
+D_box = ["珠寶", "新臺幣", "首飾", "美金", "黃金", "支票", ""]
+# t為找尋次數，初始值第一次因為剛開始找所以為:0
+t = 0
+# 要開始找寶藏了喔!記得treasure命名是要找的寶藏喔
+for treasure in D_box:
+    # 只要開始找，就會增加一次找的次數
+    t += 1
+    # 朵拉只喜歡黃金，所以她只要找黃金'''
+    if treasure == "黃金":
+        print('找第', t, "次,找到黃金！")
+        # 如果找到黃金了，尋寶冒險就結束
+        break
+    # 朵拉只喜歡黃金，所以如果找到不是黃金的就顯示不是找到黃金，是找到下找到的東西'''
+    else:
+        print('找第', t, "次,這個櫃子裡不是黃金,是", treasure)
 
-# count=0
-# for x in range(5):
-#     for y in range(10):
-#         count+=1
-# print(count)
-# print(x,y)
-
-# s=int(input('enter a number: '))
-# if 1<=s<=5:
-#     j=0
-#     while j<5:
-#         for n in range(1,6):
-#             print(n,end=' ')
-#         j+=1
-#         print()
-# else:
-#     print('invalid number')
-
-# h=int(input('enter a number: '))
-# j=0
-# while j<h:
-#     for k in range(1,h+1):
-#         print(k, end=' ')
-#     j+=1
-#     print()
-
-# h=int(input('enter a number: '))
-# for _ in range(h):
-#     for k in range(1,h+1):
-#         print(k, end=' ')
-#     print()
-
-# w=int(input('enter a number: '))
-# for y in range(1,w+1):
-#     for k in range(y,w+y):
-#         print(k, end=' ')
-#     print()
-# n=int(input('enter a number: '))
-# b='#'*1+'#'*(n-2)+'#'*1
-# c='#'*1+' '*(n-2)+'#'*1
-# b1='#'*1+'#'*(n-2)+'#'*1
-# print(b)
-# print(c)
-# print(c)
-# print(b1)
+# [ 以下為原本教學程序 ]
+d = ['a', 'b', 'c', 'q', 'e']
+t = 0
+for i in d:
+    t += 1
+    if i == "q":
+        print('第', t, "次,q！")
+        break
+    else:
+        print('第', t, "次,", i)
